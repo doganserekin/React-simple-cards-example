@@ -44,7 +44,8 @@ class User extends Component {
     render(){
         return(
             <div class="main">
-                {/* j */}
+                {/* Normalde sadece <Card/> diyerek import ettiğimiz Card.js indeki Card componentini çağırabiliriz  */}
+                {/* Fakar Card içine props dediğim isimlerle bir data gönderebiliyor, ve Card.js içinde this.props diye okuyabiliyoruz. Oradan data gönderirken de aynı şekilde.  */}
                 {this.state.users.map((item) =>
                 <Card
                     key = {item.phone}
